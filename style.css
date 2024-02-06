@@ -1,0 +1,23 @@
+body{
+    background-image: url('https://pcbcat.neocities.org/starsbg.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+h1{
+color: white;
+}
+h2{
+color: white;
+}
+h3{
+color: white;
+}
+p{
+color: white;
+}
+audio { display:none;}
