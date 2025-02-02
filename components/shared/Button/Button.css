@@ -1,0 +1,64 @@
+.button {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--surface);
+    box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+    border-radius: 0;
+  
+    min-width: 75px;
+    min-height: 23px;
+    padding: 0 12px;
+  }
+  
+  .button:not(:disabled):active,
+  .button.active {
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+  }
+
+  .button:not(:disabled):active > *,
+  .button.active > * {
+    transform: translate3d(1px, 1px, 0);
+  }
+  
+  @media (hover: none) {
+    .button:not(:disabled):hover {
+      box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+    }
+  }
+  
+  .button:focus,
+  .button.focus {
+    outline: 1px dotted #000000;
+    outline-offset: -4px;
+  }
+  
+  .button::-moz-focus-inner {
+    border: 0;
+  }
+
+.button.inTaskbar {
+    min-height: 22px;
+    height: 22px;
+    padding: 0 4px 0;
+}
+
+.button.inTaskbar img {
+    margin-right: 3px;
+}
+
+.button.inTaskbar div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.button.inTaskbar:not(:disabled):active > *,
+.button.inTaskbar.active > * {
+    transform: translate3d(1px, 1px, 0);
+  }
+
+.button.noOutline:focus {
+    outline: 0;
+}

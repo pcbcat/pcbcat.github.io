@@ -1,0 +1,40 @@
+.bump {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.inner.small,
+.outer.small {
+    padding: 1px;
+}
+
+.inner.small {
+    box-shadow: var(--box-shadow-notification);
+}
+
+.outer.small {
+    box-shadow: var(--box-shadow-notification);
+}
+
+.inner.medium, 
+.inner.large {
+    border: 2px solid var(--button-shadow);
+    border-right-color: var(--button-highlight);
+    border-bottom-color: var(--button-highlight);
+}
+
+.outer.medium,
+.outer.large {
+    border: 2px solid var(--button-highlight);
+    border-right-color: var(--button-shadow);
+    border-bottom-color: var(--button-shadow);
+
+}
+
+.inner.large {
+    border-width: 3px;
+}
